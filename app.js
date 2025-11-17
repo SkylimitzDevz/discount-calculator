@@ -37,8 +37,8 @@ function calculate(){
         outputEl.innerText = "ENTER"
     }
     if(discount === "free"){
-        outputEl.innerText = price
-        discountEl.innerText = "free"
+        outputEl.innerText = "FREE"
+        discountEl.innerText = "100%"
     }
     else{
         let total = price - (price * (discount /100))
