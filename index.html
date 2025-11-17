@@ -11,8 +11,8 @@
     <div class="cal-container">
       <div class="container">
         <div class="display">
-          <h1 id="output-el">$10</h1>
-          <h3 id="discount-el">Example</h3>
+          <h1 id="output-el">$0</h1>
+          <h3 id="discount-el">0%</h3>
         </div>
         <!-- input holder -->
         <div class="input-container">
@@ -27,9 +27,16 @@
         </div>
         <button class="cal-btn" onclick="calculate()">CALCULATE</button>
       </div>
-      <button class="git-btn">
-        <img src="icons/github-mark.svg" alt="github icon" />GITHUB
-      </button>
+      <!-- --- github button container --- -->
+      <div class="btn-container">
+        <button class="git-btn">
+          <img src="icons/github-mark.svg" alt="github icon" />FOLLOW ME
+        </button>
+        <button class="git-btn">
+          <img src="icons/github-mark.svg" alt="github icon" />REPOSITORY
+        </button>
+      </div>
+      <h3 id="name">By Ridma</h3>
     </div>
   </body>
   <script src="app.js"></script>
