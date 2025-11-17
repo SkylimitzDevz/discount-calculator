@@ -21,6 +21,10 @@ button,input,svg,img,picture{
     padding:0;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* ---styling--- */
 
 :root{
@@ -38,7 +42,8 @@ body{
     background: var(--dark);
     display: flex;
     min-height:100vh;
-    justify-content: center;    
+    justify-content: center;   
+    text-align: center; 
 }
 
 button{
@@ -65,6 +70,7 @@ button:active{
     height: 599px;
     margin: auto;
     box-shadow: 0px 25px 0px var(--medium);
+    margin-top:20px;
 }
 
 .display{
@@ -102,6 +108,12 @@ input{
     border-radius: 10px;
     font-size: 20px;
     text-align: center;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 input::placeholder{
@@ -146,13 +158,12 @@ input::placeholder{
     justify-content: center;
     color: var(--dark);
     background: var(--green);
-    width : 454px;
+    width : 300px;
     height:65px;
     border-radius:20px;
     border:none;
     font-size: 32px;
     font-weight: bold;
-    margin-top:50px;
     box-shadow: 0px 10px 0px var(--dark-green);
 }
 
@@ -160,4 +171,16 @@ input::placeholder{
     width: 35px;
     height: auto;
     margin-right: 10px;
+}
+
+.btn-container{
+    margin-top:100px;
+    display: flex;
+    gap:20px;
+}
+
+#name{
+    color: var(--green);
+    font-family: "nunito",sans-serif;
+    margin-top:40px;
 }
