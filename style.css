@@ -41,6 +41,7 @@ a{
 body{
     background: var(--dark);
     display: flex;
+    flex-direction: column;
     min-height:100vh;
     justify-content: center;   
     text-align: center; 
@@ -177,10 +178,62 @@ input::placeholder{
     margin-top:100px;
     display: flex;
     gap:20px;
+    justify-content: center;
 }
 
 #name{
     color: var(--green);
     font-family: "nunito",sans-serif;
     margin-top:40px;
+}
+
+@media (max-width: 700px){
+    .btn-container{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 40px;
+        
+    }
+    .git-btn{
+        width: 100%;
+        max-width: 454px;
+        margin: auto;
+    }
+    .input-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cal-btn{
+        width: 90%;
+        height:60px;
+    }
+
+    .container{
+        width: 100%;
+        max-width: 454px;
+        margin:10px;
+        height: 600px;
+    }
+    body{
+        justify-content: center;
+        align-items: center;
+        margin:20px;
+    }
+    .display{
+        width: 90%;
+    }
+
+    button{
+        font-size: 17px !important;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .input-container{
+        gap:10px
+    }
+
 }
