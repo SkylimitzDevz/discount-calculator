@@ -1,0 +1,163 @@
+/* reset */
+*,
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+::before,
+::after{
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+    padding:0;
+}
+
+button,input,svg,img,picture{
+    margin:0;
+    padding:0;
+}
+
+/* ---styling--- */
+
+:root{
+    --light:#F8F4EC;
+    --medium: #AFA48D;
+    --dark: #43334C;
+    --light-pink: #FF8FB7;
+    --pink: #E83C91;
+    --dark-pink: #B13C76;
+    --green: #9CFF51;
+    --dark-green: #65A733;
+}
+
+body{
+    background: var(--dark);
+    display: flex;
+    min-height:100vh;
+    justify-content: center;    
+}
+
+button{
+    cursor: pointer;
+}
+
+button:hover{
+    filter: brightness(1.1);
+}
+
+button:active{
+    transform: translateY(10px);
+    box-shadow: 0px 10px 0px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--light);
+    border-radius:25px;
+    width:454px;
+    height: 599px;
+    margin: auto;
+    box-shadow: 0px 25px 0px var(--medium);
+}
+
+.display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark);
+    border-radius: 20px;
+    height : 190px;
+    width:398px;
+    margin: auto;
+    text-align: center;
+}
+
+#output-el{
+    color: var(--green);
+    font-family: "digital-7",sans-serif;
+    font-size: 96px;
+}
+
+#discount-el{
+    color: white;
+    font-family: "digital-7 mono",sans-serif;
+    font-weight: 100;
+    font-size: 36px;
+}
+
+input{
+    background-color: var(--light-pink);
+    border:none;
+    color:white;
+    width:172px;
+    height:62px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+input::placeholder{
+    color:var(--light);
+    opacity: 0.7;
+}
+
+.input-container{
+    width: 389px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-layout{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    color: var(--dark);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cal-btn{
+    background-color: var(--pink);
+    color: var(--light);
+    border:none;
+    width:398px;
+    height:100px;
+    border-radius: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    box-shadow: 0px 8px 0px var(--dark-pink);
+    /* transform: translateY(100px); */
+    margin-bottom: 50px;
+}
+
+.git-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark);
+    background: var(--green);
+    width : 454px;
+    height:65px;
+    border-radius:20px;
+    border:none;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top:50px;
+    box-shadow: 0px 10px 0px var(--dark-green);
+}
+
+.git-btn img{
+    width: 35px;
+    height: auto;
+    margin-right: 10px;
+}
