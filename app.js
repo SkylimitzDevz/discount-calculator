@@ -24,6 +24,7 @@ function getDiscount(age){
     if(age >= 6 && age <= 17){return discounts.childDiscount}
     if(age >= 18 && age <= 26){return discounts.studentDiscount}
     if(age >= 27 && age <= 66){return 0}
+    if(age > 123){return "DEAD"}
     else{return discounts.seniorDiscount}
 }
 
@@ -39,6 +40,10 @@ function calculate(){
     if(discount === "free"){
         outputEl.innerText = "FREE"
         discountEl.innerText = "100%"
+    }
+    if(discount === "DEAD"){
+        outputEl.innerText = "DEAD"
+        discountEl.innerText = "TOO OLD BRO"
     }
     else{
         let total = price - (price * (discount /100))
