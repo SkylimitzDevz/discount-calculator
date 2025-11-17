@@ -37,11 +37,11 @@ function calculate(){
     if(discount === "ENTER"){
         outputEl.innerText = "ENTER"
     }
-    if(discount === "free"){
+    else if(discount === "free"){
         outputEl.innerText = "FREE"
         discountEl.innerText = "100%"
     }
-    if(discount === "DEAD"){
+    else if(discount === "DEAD"){
         outputEl.innerText = "DEAD"
         discountEl.innerText = "TOO OLD BRO"
     }
